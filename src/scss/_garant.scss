@@ -1,0 +1,110 @@
+@import './variables';
+
+.garant {
+  position: relative;
+  &__container {
+    max-width: 1138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 690px) {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    // margin-top: -150px;
+    // margin-left: 200px;
+
+    @media (max-width: 690px) {
+      margin-top: 50px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 58.51px;
+      max-width: 549px;
+      @media (max-width: 1180px) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      @media (max-width: 900px) {
+        font-size: 30px;
+        line-height: 30px;
+      }
+      @media (max-width: 330px) {
+        // max-width: 100%;
+        font-size: 27px;
+      }
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24.38px;
+      max-width: 539px;
+      margin-top: 5px;
+      @media (max-width: 1180px) {
+        font-size: 17px;
+        margin-top: 10px;
+        line-height: 17px;
+      }
+      @media (max-width: 900px) {
+        font-size: 15px;
+        line-height: 15px;
+      }
+      @media (max-width: 690px) {
+        max-width: 400px;
+        font-size: 14px;
+      }
+    }
+    a {
+      margin-top: 20px;
+      display: inline-flex;
+      justify-content: space-between;
+      width: 310px;
+      padding: 12px 24px;
+      color: #000;
+      gap: 16px;
+      border-radius: 100px;
+      border: 0.5px solid #c0c0c0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.94px;
+
+      @media (max-width: 1180px) {
+        font-size: 16px;
+        width: 290px;
+      }
+      @media (max-width: 900px) {
+        font-size: 14px;
+        width: 250px;
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  &__img {
+    img {
+      width: 646px;
+      // margin-right: -200px !important;
+      // padding-right: -200px;
+      @media (max-width: 690px) {
+        display: none;
+      }
+    }
+    position: relative;
+    // right: -190px !important;
+    @media (max-width: 1590px) {
+      right: -100px;
+    }
+    @media (max-width: 1280px) {
+      right: 0;
+    }
+    // bottom: 0;
+  }
+}

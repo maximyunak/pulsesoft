@@ -1,0 +1,88 @@
+@import './variables';
+
+/* .bg {
+  background: url(../../temple/main/bg.png) no-repeat;
+  object-fit: fill;
+  width: 100vw;
+  height: 900px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+} */
+.bg {
+  /* Используем background-size вместо object-fit */
+
+  background: url(../../temple/main/bg.png) no-repeat;
+  background-size: cover; /* Растягиваем изображение, чтобы покрыть весь экран */
+  height: 900px;
+
+  /* @media (max-width: 750px) {
+    height: 680px;
+  }
+  @media (max-width: 690px) {
+    height: 500px;
+  }
+  */
+  @media (max-width: 690px) {
+    height: 500px;
+  }
+  @media (max-width: 530px) {
+    height: 400px;
+  }
+  @media (max-width: 440px) {
+    height: 350px;
+  }
+}
+
+/* .key {
+  margin-top: 600px;
+} */
+
+.header {
+  padding-top: 20px;
+  &__container {
+    max-width: 988px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    font-family: 'MuseoModerno', sans-serif;
+    align-items: center;
+
+    h2 {
+      font-size: 25px;
+      font-weight: 400;
+      color: #fff;
+      @media (max-width: 385px) {
+        font-size: 20px;
+      }
+    }
+    img {
+      @media (max-width: 385px) {
+        width: 30px;
+      }
+    }
+    span {
+      color: $gray8c;
+    }
+  }
+  &__price {
+    padding: 13.5px 56px;
+    background-color: white;
+    border-radius: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: #000;
+    font-size: 14px;
+
+    @media (max-width: 500px) {
+      padding: 11px 30px;
+    }
+    @media (max-width: 385px) {
+      padding: 11px 20px;
+      font-size: 11px;
+    }
+  }
+}

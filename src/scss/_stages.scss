@@ -1,0 +1,285 @@
+// @import './_variables.scss';
+
+// .stages {
+//   // display: none;
+//   &__container {
+//     max-width: 1140px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+
+//   &__title {
+//     font-size: 50px;
+//     font-weight: 600;
+//     line-height: 60.95px;
+//     color: $darkblue;
+//     text-align: center;
+//     max-width: 639px;
+//   }
+
+//   &__cards {
+//     margin-top: 68px;
+//     display: flex;
+//     display: none;
+//     gap: 20px;
+//   }
+
+//   ul {
+//     margin-top: 15px;
+//     display: flex;
+//     margin-left: 8px;
+//     flex-direction: column;
+//     gap: 8px;
+//   }
+
+//   ul li {
+//     font-size: 18px;
+//     font-weight: 500;
+//     line-height: 21.94px;
+//     color: $darkblue;
+//     display: flex;
+//     align-items: start;
+//   }
+
+//   ul li::before {
+//     content: '•';
+//     margin-right: 10px;
+//     color: #333;
+//     display: inline-block; /* Добавляем это свойство */
+//   }
+//   &__card {
+//     width: 377px;
+//     height: 741px;
+//     border-radius: 36px;
+//     display: flex;
+//     flex-direction: column;
+//     box-shadow: 13px 15px 16.4px 0px #00000012;
+//   }
+
+//   &__test {
+//     margin-top: 20px;
+//     border-radius: 36px;
+//     box-shadow: 13px 15px 16.4px 0px #00000012;
+//     width: 1170px;
+// @media (max-width: 1250px) {
+//   width: 376px;
+//   height: 741px;
+// }
+//     // display: none;
+//   }
+// }
+
+// .card {
+//   &__info {
+//     margin-top: -70px;
+//     padding: 0 40px 40px;
+//   }
+
+//   &__title {
+//     font-size: 25px;
+//     font-weight: 700;
+//     color: $darkblue;
+//   }
+
+//   &__time {
+//     font-size: 18px;
+//     font-weight: 600;
+//     line-height: 21.94px;
+//     color: $gray45;
+//     text-align: center;
+//     margin-top: auto;
+//     margin-bottom: 43px;
+//     opacity: 0.3;
+//   }
+// }
+// .test {
+//   &__info {
+//     display: flex;
+//     justify-content: space-between;
+//     // @media (max-width: 1250px) {
+//     //   flex-direction: column;
+//     // }
+//   }
+
+//   &__text {
+//     padding: 57px 138px 0 0;
+//   }
+// }
+
+@import './_variables.scss';
+
+.stages {
+  // display: none;
+  margin-top: 75px;
+  @media (max-width: 500px) {
+    margin-top: 40px;
+  }
+  &__container {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60.95px;
+    color: $darkblue;
+    text-align: center;
+    max-width: 639px;
+    @media (max-width: 530px) {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+
+  &__grid {
+    margin-top: 68px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 колонки */
+    gap: 20px;
+    @media (max-width: 1250px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+      justify-content: center;
+      align-items: center;
+      // grid-template-rows: auto 1fr; /* 2 строки */
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 40px;
+    }
+  }
+
+  img {
+    border-radius: 0 36px 0 0;
+  }
+
+  ul {
+    margin-top: 15px;
+    display: flex;
+    margin-left: 8px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  ul li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: $darkblue;
+    display: flex;
+    align-items: start;
+  }
+
+  ul li::before {
+    content: '•';
+    margin-right: 10px;
+    color: #333;
+  }
+
+  &__card {
+    width: 377px;
+    height: 741px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 13px 15px 16.4px 0px #00000012;
+    @media (max-width: 800px) {
+      height: 600px;
+      img {
+        // scale: 0.7;
+        width: 80%;
+        position: relative;
+        right: -63px;
+      }
+    }
+    @media (max-width: 500px) {
+      scale: 0.95;
+      width: 310px;
+      // margin-left: 40px;
+    }
+  }
+
+  &__test {
+    margin-top: 20px;
+    border-radius: 36px;
+    box-shadow: 13px 15px 16.4px 0px #00000012;
+    width: 100%; /* Занимает всю ширину сетки */
+    grid-column: span 3; /* Занимает все 3 колонки */
+    @media (max-width: 1250px) {
+      // grid-column: span 2; /* Занимает две колонки */
+      // grid-row: 2; /* Занимает вторую строку */
+      // width: 100%;
+      // width: 300px;
+      grid-column: span 1;
+      display: flex;
+      flex-direction: column;
+      width: 376px;
+      height: 741px;
+      margin-top: 0;
+      @media (max-width: 800px) {
+        height: 600px;
+      }
+      @media (max-width: 500px) {
+        scale: 0.95;
+        width: 310px;
+        // margin-left: 40px;
+      }
+    }
+  }
+}
+
+.card {
+  &__info {
+    margin-top: -70px;
+    padding: 0 40px 40px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: $darkblue;
+  }
+
+  &__time {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    color: $gray45;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 43px;
+    opacity: 0.3;
+  }
+}
+.test {
+  &__info {
+    display: flex;
+
+    // justify-content: space-between;
+
+    @media (max-width: 1250px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+    padding: 57px 138px 0 0;
+    @media (max-width: 1250px) {
+      padding: 57px 20px 40px 40px;
+      margin-top: 185px;
+    }
+    @media (max-width: 800px) {
+      margin-top: 0;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .stages__card:nth-child(3),
+  .stages__card:nth-child(4) {
+    grid-row: 1; /* Обе карточки в первой строке */
+  }
+}

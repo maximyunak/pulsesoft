@@ -13,7 +13,295 @@
     />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <section class="bg">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo opacity">
+            <img src="./public/logo.svg" alt="" />
+            <h2>Pulse<span>Soft</span></h2>
+          </div>
+          <!-- <div class="header__price"></div> -->
+          <a href="" class="header__price opacity">Узнать стоимость</a>
+        </div>
+      </header>
+
+      <section class="business">
+        <div class="business__container">
+          <h1>Лучшее решение для Вашего бизнеса, это цифровое</h1>
+          <h2>Мы создаем мобильные приложения, веб-сайты и телеграмм боты.</h2>
+          <div class="business__btns">
+            <a href="#" class="dev opacity">Разработать</a
+            ><a href="#" class="about opacity">О нас</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="phones">
+      <div class="phones__container">
+        <img src="./temple/phones/Component 20 1phone1.png" alt="" /><img
+          src="./temple/phones/Component 19 (1) 1phone2.png"
+          alt=""
+        /><img src="./temple/phones/Component 19 1phone3.png" alt="" />
+      </div>
+    </section>
+
+    <section class="key">
+      <h1 class="key__title">Ключевые ценности</h1>
+      <div class="key__cards">
+        <div class="key__card">
+          <img src="./public/logo.svg" alt="" />
+          <h1>Скорость</h1>
+          <h4>Время разработки сокращается за счёт использования современных технологий.</h4>
+          <a href="#" class="opacity6">Подробнее</a>
+        </div>
+        <div class="key__card">
+          <img src="./public/logo.svg" alt="" />
+          <h1>Команда</h1>
+          <h4>
+            Над Вашим проектом будут заниматься специалисты со опытом разработки более 5-ти лет.
+          </h4>
+          <a href="#" class="opacity6">Подробнее</a>
+        </div>
+        <div class="key__card">
+          <img src="./public/logo.svg" alt="" />
+          <h1>Отчётность</h1>
+          <h4>
+            На каждом проекте есть менеджер, который организовывает работу и высылает Вам
+            отчетность.
+          </h4>
+          <a href="#" class="opacity6">Подробнее</a>
+        </div>
+        <div class="key__card">
+          <img src="./public/logo.svg" alt="" />
+          <h1>Быстрый старт</h1>
+          <h4>С нами Вы можете протестировать свою гипотезу в кратчайшие сроки.</h4>
+          <a href="#" class="opacity6">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="garant">
+      <div class="garant__container">
+        <div class="garant__title">
+          <h1>Даем гарантию на сроки создания</h1>
+          <h4>
+            Устанавливаем четкие сроки и фиксируем размер неустойки за каждый факт просрочки в
+            договоре
+          </h4>
+          <a class="opacity6" href=""
+            >Рассчитать стоимость <img src="./temple/icons/icons.svg" alt=""
+          /></a>
+        </div>
+        <div class="garant__img">
+          <img src="./temple/phones/handphone.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="line stage-line"></div>
+
+    <!-- <section class="stages">
+      <div class="stages__container">
+        <h1 class="stages__title">Ключевые этапы разработки</h1>
+        <div class="stages__cards">
+          <div class="stages__card">
+            <img src="./temple/laptops/imagelaptop1.png" alt="" />
+            <div class="card__info">
+              <h4 class="card__title">Дизайн</h4>
+              <ul>
+                <li>Сбор информации о проекте</li>
+                <li>Генерация сценария взаимодействия с продуктом</li>
+                <li>Разработка прототипа</li>
+                <li>Отрисовка дизайн-макета в Figma</li>
+              </ul>
+            </div>
+            <h3 class="card__time">Срок от 10 дней</h3>
+          </div>
+          <div class="stages__card">
+            <img src="./temple/laptops/imagelaptop2.png" alt="" />
+            <div class="card__info">
+              <h4 class="card__title">Вёрстка</h4>
+              <ul>
+                <li>Подготавливаем приложение к серверной части</li>
+                <li>Оптимизируем интерфейс</li>
+                <li>Подготавливаем приложение к серверной части</li>
+              </ul>
+            </div>
+            <h3 class="card__time">Срок от 15 дней</h3>
+          </div>
+          <div class="stages__card">
+            <img src="./temple/laptops/imagelaptop3.png" alt="" />
+            <div class="card__info">
+              <h4 class="card__title">Функционал</h4>
+              <ul>
+                <li>Применяем архитектуру с возможностью масштабирования</li>
+                <li>
+                  Используем уже протестированные решения, ускоряя разработку и повышая качество
+                  приложения
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="card__time">Срок от 10 дней</h3>
+          </div>
+        </div>
+        <div class="stages__test">
+          <div class="test__info">
+            <img src="./temple/laptops/imagepad.png" alt="" />
+            <div class="test__text">
+              <h4 class="card__title">Тестирование</h4>
+              <ul>
+                <li>Вносим правки и исправляем ошибки</li>
+                <li>
+                  Решаем любые проблемы, связанные с публикацией: шифрование и подозрение в рекламе,
+                  возрастной цензор
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h3 class="card__time">Срок от 5 дней</h3>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="stages">
+      <div class="stages__container">
+        <h1 class="stages__title">Ключевые этапы разработки</h1>
+        <div class="stages__grid">
+          <div class="stages__card">
+            <img src="./temple/laptops/imagelaptop1.png" alt="" />
+            <div class="card__info">
+              <h4 class="card__title">Дизайн</h4>
+              <ul>
+                <li>Сбор информации о проекте</li>
+                <li>Генерация сценария взаимодействия с продуктом</li>
+                <li>Разработка прототипа</li>
+                <li>Отрисовка дизайн-макета в Figma</li>
+              </ul>
+            </div>
+            <h3 class="card__time">Срок от 10 дней</h3>
+          </div>
+          <div class="stages__card">
+            <img src="./temple/laptops/imagelaptop2.png" alt="" />
+            <div class="card__info">
+              <h4 class="card__title">Вёрстка</h4>
+              <ul>
+                <li>Подготавливаем приложение к серверной части</li>
+                <li>Оптимизируем интерфейс</li>
+                <li>Подготавливаем приложение к серверной части</li>
+              </ul>
+            </div>
+            <h3 class="card__time">Срок от 15 дней</h3>
+          </div>
+          <div class="stages__card">
+            <img src="./temple/laptops/imagelaptop3.png" alt="" />
+            <div class="card__info">
+              <h4 class="card__title">Функционал</h4>
+              <ul>
+                <li>Применяем архитектуру с возможностью масштабирования</li>
+                <li>
+                  Используем уже протестированные решения, ускоряя разработку и повышая качество
+                  приложения
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="card__time">Срок от 10 дней</h3>
+          </div>
+          <div class="stages__test">
+            <div class="test__info">
+              <div class="test__img"><img src="./temple/laptops/imagepad.png" alt="" /></div>
+              <div class="test__text">
+                <h4 class="card__title">Тестирование</h4>
+                <ul>
+                  <li>Вносим правки и исправляем ошибки</li>
+                  <li>
+                    Решаем любые проблемы, связанные с публикацией: шифрование и подозрение в
+                    рекламе, возрастной цензор
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h3 class="card__time">Срок от 5 дней</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__container">
+        <div class="contacts__title">
+          <h1 class="contacts__main-title">Наши контакты</h1>
+          <h5 class="contacts__main-desc">
+            Оставьте заявку для обсуждения вашего проекта и расчёта стоимости разработки.
+          </h5>
+        </div>
+        <div class="contacts__info">
+          <div class="contacts__social">
+            <a href="" class="contacts__number opacity6">+7 (993) 900-96-46</a>
+            <a href="" class="contacts__mail opacity6">info@pulsesoft.ru</a>
+            <a href="" class="contacts__adress opacity6"
+              >Москва, Царицыно, Солнечная д. 6, оф. 12</a
+            >
+
+            <h3 class="contacts__worktime">Работаем ежедневно с 10:00 до 22:00</h3>
+          </div>
+
+          <div class="contacts__client">
+            <div class="question__block">
+              <h4 class="client__title">Как к вам обращаться?</h4>
+              <input type="text" placeholder="Введите ваше имя" />
+            </div>
+            <div class="question__block">
+              <h4 class="client__title">Куда перезвонить?</h4>
+              <input type="text" placeholder="+7 993 900 96 46" />
+            </div>
+            <div class="question__block">
+              <h4 class="client__title">Куда направить расчёт стоимости?</h4>
+              <input type="text" placeholder="email@email.ru" />
+            </div>
+            <a href="" class="question__price opacity6"
+              >Рассчитать стоимость <img src="./temple/icons/icons.svg" alt=""
+            /></a>
+            <p class="politica">
+              Отправляя заявку, вы соглашаетесь с
+              <a href="" class="underline opacity6">Политикой Конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="line contacts-line"></div>
+
+    <footer class="footer">
+      <div class="footer__social">
+        <div class="footer__social-block youtube">
+          <a href="" class="opacity6"
+            ><span>Youtube</span> <img src="./temple/icons/Youtube.svg" alt=""
+          /></a>
+        </div>
+        <div class="footer__social-block tg">
+          <a href="" class="opacity6"
+            ><span>Telegram</span> <img src="./temple/icons/Telegram.svg" alt=""
+          /></a>
+        </div>
+        <div class="footer__social-block vk">
+          <a href="" class="opacity6"
+            ><span>ВКонтакте</span> <img src="./temple/icons/ВКонтакте.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="footer__data">
+        <h2>ИП: Яковлев Максим Алексеевич</h2>
+        <h2>ИНН: 772400906083</h2>
+        <h2>ОГРН: 322774600456330</h2>
+      </div>
+      <div class="footer__copy">© 2024 PulseSoft</div>
+    </footer>
+
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
