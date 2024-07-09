@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 @import url(./_header.scss);
 @import url(./_null.scss);
@@ -10,7 +10,7 @@
 @import url(./_footer.scss);
 @import url(./_contacts.scss);
 
-[class*='__container'] {
+[class*="__container"] {
   /* max-width: 1170px; */
   margin: 0 auto;
   @media (max-width: 1450px) {
@@ -33,7 +33,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 
   &.active {
@@ -74,4 +74,8 @@ body {
   &:hover {
     opacity: 0.6 !important;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
