@@ -1,4 +1,4 @@
-@import "./_variables.scss";
+@import './_variables.scss';
 
 .stages {
   // display: none;
@@ -60,7 +60,7 @@
   }
 
   ul li::before {
-    content: "•";
+    content: '•';
     margin-right: 10px;
     color: #333;
     display: inline-block; /* Добавляем это свойство */
@@ -79,14 +79,22 @@
   }
 
   &__test {
+    img {
+      min-width: 600px;
+      max-width: 600px;
+      @media (max-width: 620px) {
+        scale: 0.8;
+        min-width: 400px;
+      }
+    }
     margin-top: 20px;
     border-radius: 36px;
     box-shadow: 13px 15px 16.4px 0px #00000012;
     // width: 1170px;
     // display: none;
     overflow: auto;
-    // width: 100%;
-    min-width: 1170px;
+    width: 100%;
+    // min-width: 1170px;
 
     @media (max-width: 1140px) {
     }
@@ -146,14 +154,16 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    // @media (max-width: 1250px) {
-    //   flex-direction: column;
-    // }
+    @media (max-width: 1000px) {
+    }
   }
 
   &__text {
     padding: 57px 138px 0 0;
-    min-width: 100%;
+    max-width: 500px;
+    min-width: 500px;
+    @media (max-width: 1000px) {
+    }
   }
 }
 
